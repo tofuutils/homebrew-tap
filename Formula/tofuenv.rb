@@ -15,6 +15,7 @@ class Tofuenv < Formula
 
   on_macos do
     depends_on "grep"
+    depends_on "jq"
   end
 
   conflicts_with "opentofu", because: "tofuenv symlinks opentofu binaries"
