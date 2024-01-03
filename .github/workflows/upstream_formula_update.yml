@@ -8,9 +8,6 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.client_payload.formula }}
 
-env:
-  PYTHON_VERSION_FILE: deploy/requirements.txt
-
 jobs:
   open:
     name: Sync PR
