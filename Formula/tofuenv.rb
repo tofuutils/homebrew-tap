@@ -2,7 +2,7 @@ class Tofuenv < Formula
   desc "OpenTofu version manager inspired by tfenv"
   homepage "https://github.com/tofuutils/tofuenv"
   url "https://github.com/tofuutils/tofuenv/archive/refs/tags/v1.0.0.tar.gz"
-  # sha256 "TODO"
+  sha256 "1c2bb84e377fa766702a0bcb7eb6782efd322741fafa9717815e2c04e48dff97"
   license "MIT"
   head "https://github.com/tofuutils/tofuenv.git", branch: "main"
 
@@ -10,10 +10,6 @@ class Tofuenv < Formula
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
-
-#   bottle do
-#     sha256 cellar: :any_skip_relocation, all: "4905c2390b0254348be44da1c4a05b3d8bf4d8704b94d16b739d64fd4709784b"
-#   end
 
   uses_from_macos "unzip"
 
