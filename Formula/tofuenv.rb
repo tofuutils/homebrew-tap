@@ -1,8 +1,8 @@
 class Tofuenv < Formula
   desc "OpenTofu version manager inspired by tfenv"
   homepage "https://github.com/tofuutils/tofuenv"
-  url "https://github.com/tofuutils/tofuenv/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "1cc103ec85ccd1e95fe4c9dc717a776df196d96dabf9f7a57f90631126d494db"
+  url "https://github.com/tofuutils/tofuenv/archive/refs/tags/v1.0.3.tar.gz"
+  sha256 "c410a15f864e659ca827b998437039a354a2beda43db3d37a29a5dd18126aef5"
   license "MIT"
   head "https://github.com/tofuutils/tofuenv.git", branch: "main"
 
