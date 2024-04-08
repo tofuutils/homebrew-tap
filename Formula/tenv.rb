@@ -5,13 +5,13 @@
 class Tenv < Formula
   desc "OpenTofu and Terraform version manager (inspired by tofuenv, written in Go)"
   homepage "https://github.com/tofuutils/tenv"
-  version "1.6.2"
+  version "1.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tofuutils/tenv/releases/download/v1.6.2/tenv_v1.6.2_Darwin_x86_64.tar.gz"
-      sha256 "b961a90b038581af29d5fe0be43a7e310600a4e4075de01b721c8b01b7541023"
+      url "https://github.com/tofuutils/tenv/releases/download/v1.7.0/tenv_v1.7.0_Darwin_x86_64.tar.gz"
+      sha256 "e95baf81084089ee1988d4425b5040fbba551ad527fdbec09689daaa4ccbf976"
 
       def install
         bin.install "tenv"
@@ -22,8 +22,8 @@ class Tenv < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tofuutils/tenv/releases/download/v1.6.2/tenv_v1.6.2_Darwin_arm64.tar.gz"
-      sha256 "7fae337e8e30849e46a624febe572dd42098a5ab8e2180b641fe0cbb27ef112e"
+      url "https://github.com/tofuutils/tenv/releases/download/v1.7.0/tenv_v1.7.0_Darwin_arm64.tar.gz"
+      sha256 "79d85f33ca42d8d86f69d5e79293b2ac0e26c8839d50b85119ee96dbdf147966"
 
       def install
         bin.install "tenv"
@@ -37,8 +37,8 @@ class Tenv < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tofuutils/tenv/releases/download/v1.6.2/tenv_v1.6.2_Linux_x86_64.tar.gz"
-      sha256 "53e5374b55c7ac3b1ebe55a9df7a4bc20cb924d257a0351c6ad197841e434ee6"
+      url "https://github.com/tofuutils/tenv/releases/download/v1.7.0/tenv_v1.7.0_Linux_x86_64.tar.gz"
+      sha256 "1e36fa722130ed0a87c54a3a3a4322b4084ea472a07b1f7132e3360a19d4929a"
 
       def install
         bin.install "tenv"
@@ -49,8 +49,8 @@ class Tenv < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/tofuutils/tenv/releases/download/v1.6.2/tenv_v1.6.2_Linux_armv6.tar.gz"
-      sha256 "c9de19d92022f5d0b1101f788f4bd95ec67435656ce8ef93fe07a7483fe59b56"
+      url "https://github.com/tofuutils/tenv/releases/download/v1.7.0/tenv_v1.7.0_Linux_armv6.tar.gz"
+      sha256 "d14db42ae51c50b52bf2029c006b872cf66d77abf2f567efb3ee2377f05f070b"
 
       def install
         bin.install "tenv"
@@ -61,8 +61,8 @@ class Tenv < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tofuutils/tenv/releases/download/v1.6.2/tenv_v1.6.2_Linux_arm64.tar.gz"
-      sha256 "2d68e865b08f6a9fe821535566492a410325cf76bdaa4962bdd850c6d68f12bc"
+      url "https://github.com/tofuutils/tenv/releases/download/v1.7.0/tenv_v1.7.0_Linux_arm64.tar.gz"
+      sha256 "cfe7fc8dea343e20ca0d2faca736d89f796a5ecc70e4b2187f4749a36ab8cb1f"
 
       def install
         bin.install "tenv"
